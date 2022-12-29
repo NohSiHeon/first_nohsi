@@ -1,0 +1,46 @@
+body {
+     margin:0;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom:2px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+#hate {
+    color:red;
+}
+#resume {
+    color:green;
+}
+ul {
+    border-right:2px solid gray;
+    width:120px;
+    margin:0;
+     padding:30px;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 140px 1fr;
+}
+#grid #article {
+    padding-left:50px;
+    text-align: center;
+}
+@media (max-width:800px){ /* 크기가 800px 이하일때 설정 변경*/
+    #grid {
+        display:block;
+    }
+    ul {
+        border-right:none;
+    }
+    h1 {
+        border-bottom:none;
+    }
+
+}
